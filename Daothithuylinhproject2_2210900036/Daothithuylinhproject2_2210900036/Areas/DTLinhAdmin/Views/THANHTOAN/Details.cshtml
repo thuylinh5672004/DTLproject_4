@@ -1,0 +1,51 @@
+﻿@model Daothithuylinhproject2_2210900036.Models.THANHTOAN
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/DTLinhAdmin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>THANHTOAN</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PhuongThucTT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhuongThucTT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayTT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayTT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sotien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sotien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DONHANG.MaKH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DONHANG.MaKH)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaTT.Trim() }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

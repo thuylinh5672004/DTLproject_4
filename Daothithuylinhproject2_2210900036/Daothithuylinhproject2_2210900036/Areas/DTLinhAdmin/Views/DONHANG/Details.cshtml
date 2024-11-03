@@ -1,0 +1,89 @@
+﻿@model Daothithuylinhproject2_2210900036.Models.DONHANG
+
+
+@{
+    ViewBag.Title = "Chi tiết đơn hàng";
+    var chiTiet = ViewBag.CHITIETDONHANG as List<Daothithuylinhproject2_2210900036.Models.CHITIETDONHANG>;
+}
+
+<h2>Chi tiết đơn hàng</h2>
+
+<div>
+    <h4>Thông tin đơn hàng</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tongtien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tongtien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ngaydat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngaydat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trangthai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trangthai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KHACHHANG.HoTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KHACHHANG.HoTen)
+        </dd>
+
+    </dl>
+</div>
+
+<div>
+    @if (chiTiet != null)
+    {
+        var stt = 0;
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">MaSP</th>
+                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">MaHD</th>
+                    <th scope="col">Tongtien</th>
+                    <th scope="col">Tongtien</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in chiTiet)
+                {
+                    stt++;
+                    <tr>
+                        <th scope="row">@stt</th>
+                        <td> @Html.DisplayFor(modelItem => item.MaSP)</td>
+                        <td> @Html.DisplayFor(modelItem => item.SANPHAM.TenSP)</td>
+                        <td> @Html.DisplayFor(modelItem => item.MaDH)</td>
+                        <td> @Html.DisplayFor(modelItem => item.Tongtien)</td>
+                        <td> @Html.DisplayFor(modelItem => item.Ngaydat)</td>
+                        <td>...</td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    }
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaDH.Trim() }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

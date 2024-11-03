@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Daothithuylinhproject2_2210900036.Models.SANPHAM>
+
+@{
+    ViewBag.Title = "Sản phẩm";
+    Layout = "~/Areas/DTLinhAdmin/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .table a {
+        display: inline-block;
+        padding: 8px 12px;
+        margin: 0 5px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+        /* Màu sắc cho từng loại nút */
+        .table a:link, .table a:visited {
+            color: #fff;
+        }
+
+        .table a.edit {
+            background-color: #4CAF50; /* Màu xanh lá cho nút Edit */
+        }
+
+        .table a.details {
+            background-color: #2196F3; /* Màu xanh dương cho nút Details */
+        }
+
+        .table a.delete {
+            background-color: #f44336; /* Màu đỏ cho nút Delete */
+        }
+
+        /* Hiệu ứng khi hover qua nút */
+        .table a:hover {
+            opacity: 0.8;
+        }
+</style>
+<h2>Sản phẩm</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenSP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GiaBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuongTonKho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DANHMUC.TenDM)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenSP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuongTonKho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DANHMUC.TenDM)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MaSP.Trim() }, new { @class = "edit" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.MaSP.Trim() }, new { @class = "details" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.MaSP.Trim() }, new { @class = "delete" })
+            </td>
+        </tr>
+    }
+
+
+</table>
+
