@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Daothithuylinhproject2_2210900036.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,12 @@ namespace Daothithuylinhproject2_2210900036.Areas.DTLinhAdmin.Controllers
 {
     public class HomeController : Controller
     {
+        LoginModel db = new LoginModel();
         // GET: DTLinhAdmin/Home
         public ActionResult Index()
         {
             return View();
         }
+       
     }
 }

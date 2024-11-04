@@ -134,6 +134,7 @@
     <Compile Include="Areas\DTLinhAdmin\Controllers\DONHANGController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\HomeController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\KHACHHANGController.cs" />
+    <Compile Include="Areas\DTLinhAdmin\Controllers\LoginController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\SANPHAMController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\THANHTOANController.cs" />
     <Compile Include="Areas\DTLinhAdmin\DTLinhAdminAreaRegistration.cs" />
@@ -165,12 +166,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DTlinhModel1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\DtlTaiKhoan.cs" />
     <Compile Include="Models\KHACHHANG.cs">
       <DependentUpon>DTlinhModel1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\SANPHAM.cs">
       <DependentUpon>DTlinhModel1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\sysdiagrams.cs" />
     <Compile Include="Models\THANHTOAN.cs">
       <DependentUpon>DTlinhModel1.tt</DependentUpon>
     </Compile>
@@ -2225,6 +2229,7 @@
     <Content Include="Areas\DTLinhAdmin\Views\THANHTOAN\Details.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\THANHTOAN\Edit.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\THANHTOAN\Index.cshtml" />
+    <Content Include="Areas\DTLinhAdmin\Views\Login\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
