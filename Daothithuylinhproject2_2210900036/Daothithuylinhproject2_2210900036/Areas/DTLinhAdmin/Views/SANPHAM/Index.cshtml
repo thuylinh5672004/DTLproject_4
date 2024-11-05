@@ -4,7 +4,6 @@
     ViewBag.Title = "Sản phẩm";
     Layout = "~/Areas/DTLinhAdmin/Views/Shared/_Layout.cshtml";
 }
-
 <style>
     .table a {
         display: inline-block;
@@ -39,7 +38,8 @@
             opacity: 0.8;
         }
 </style>
-<h2>Sản phẩm</h2>
+
+<h2>SẢN PHẨM</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -56,34 +56,37 @@
             @Html.DisplayNameFor(model => model.SoLuongTonKho)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.Anh)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.DANHMUC.TenDM)
         </th>
         <th></th>
     </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TenSP)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GiaBan)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SoLuongTonKho)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DANHMUC.TenDM)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.MaSP.Trim() }, new { @class = "edit" }) |
-                @Html.ActionLink("Details", "Details", new { id = item.MaSP.Trim() }, new { @class = "details" }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.MaSP.Trim() }, new { @class = "delete" })
-            </td>
-        </tr>
-    }
-
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GiaBan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuongTonKho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Anh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DANHMUC.TenDM)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.MaSP.Trim() }, new { @class = "edit" }) |
+            @Html.ActionLink("Details", "Details", new { id = item.MaSP.Trim() }, new { @class = "details" }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.MaSP.Trim() }, new { @class = "delete" })
+        </td>
+    </tr>
+}
 
 </table>
-

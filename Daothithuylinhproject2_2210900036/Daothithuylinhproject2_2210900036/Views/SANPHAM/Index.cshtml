@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Daothithuylinhproject2_2210900036.Models.SANPHAM>
+
+@{
+    ViewBag.Title = "Danh sách sản phẩm";
+}
+
+<h2>Danh sách sản phẩm</h2>
+
+<p>
+    @Html.ActionLink("Tạo sản phẩm mới", "Create")
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.First().TenSP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().GiaBan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SoLuongTonKho)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Anh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().DANHMUC.TenDM)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                     @Html.DisplayFor(modelItem => item.TenSP)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenSP)
+                </td>
+                <td>
+                    @($"{item.GiaBan:C}") <!-- Hiển thị giá với định dạng tiền tệ -->
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoLuongTonKho)
+                </td>
+                <td>
+                    <img src="@item.Anh" alt="@item.TenSP" style="width: 100px; height: 100px;" /> <!-- Hiển thị ảnh sản phẩm -->
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DANHMUC.TenDM)
+                </td>
+                <td>
+                    @Html.ActionLink("Thêm vào giỏ hàng", "AddToCart", "ShoppingCart",
+                        new { maSanPham = @item.MaSP, tenSanPham = @item.TenSP, gia = @item.GiaBan, soLuong = 1 },
+                        new { @class = "btn btn-primary btn-sm" }) <!-- Nút "Thêm vào giỏ hàng" -->
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

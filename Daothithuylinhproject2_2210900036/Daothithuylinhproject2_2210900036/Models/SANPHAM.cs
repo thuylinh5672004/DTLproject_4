@@ -25,6 +25,7 @@ namespace Daothithuylinhproject2_2210900036.Models
         public string MaDM { get; set; }
         public Nullable<decimal> GiaBan { get; set; }
         public Nullable<int> SoLuongTonKho { get; set; }
+        public string Anh { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETDONHANG> CHITIETDONHANG { get; set; }

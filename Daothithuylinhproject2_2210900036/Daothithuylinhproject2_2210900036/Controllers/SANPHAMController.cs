@@ -8,20 +8,20 @@ using System.Web;
 using System.Web.Mvc;
 using Daothithuylinhproject2_2210900036.Models;
 
-namespace Daothithuylinhproject2_2210900036.Areas.DTLinhAdmin.Controllers
+namespace Daothithuylinhproject2_2210900036.Controllers
 {
     public class SANPHAMController : Controller
     {
         private Daothithuylinh_k22CNTT_2210900036Entities2 db = new Daothithuylinh_k22CNTT_2210900036Entities2();
 
-        // GET: DTLinhAdmin/SANPHAM
+        // GET: SANPHAM
         public ActionResult Index()
         {
             var sANPHAM = db.SANPHAM.Include(s => s.DANHMUC);
             return View(sANPHAM.ToList());
         }
 
-        // GET: DTLinhAdmin/SANPHAM/Details/5
+        // GET: SANPHAM/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
@@ -36,14 +36,14 @@ namespace Daothithuylinhproject2_2210900036.Areas.DTLinhAdmin.Controllers
             return View(sANPHAM);
         }
 
-        // GET: DTLinhAdmin/SANPHAM/Create
+        // GET: SANPHAM/Create
         public ActionResult Create()
         {
             ViewBag.MaDM = new SelectList(db.DANHMUC, "MaDM", "TenDM");
             return View();
         }
 
-        // POST: DTLinhAdmin/SANPHAM/Create
+        // POST: SANPHAM/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -61,7 +61,7 @@ namespace Daothithuylinhproject2_2210900036.Areas.DTLinhAdmin.Controllers
             return View(sANPHAM);
         }
 
-        // GET: DTLinhAdmin/SANPHAM/Edit/5
+        // GET: SANPHAM/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
@@ -77,7 +77,7 @@ namespace Daothithuylinhproject2_2210900036.Areas.DTLinhAdmin.Controllers
             return View(sANPHAM);
         }
 
-        // POST: DTLinhAdmin/SANPHAM/Edit/5
+        // POST: SANPHAM/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -94,7 +94,7 @@ namespace Daothithuylinhproject2_2210900036.Areas.DTLinhAdmin.Controllers
             return View(sANPHAM);
         }
 
-        // GET: DTLinhAdmin/SANPHAM/Delete/5
+        // GET: SANPHAM/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
@@ -109,7 +109,7 @@ namespace Daothithuylinhproject2_2210900036.Areas.DTLinhAdmin.Controllers
             return View(sANPHAM);
         }
 
-        // POST: DTLinhAdmin/SANPHAM/Delete/5
+        // POST: SANPHAM/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)

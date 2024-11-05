@@ -138,7 +138,10 @@
     <Compile Include="Areas\DTLinhAdmin\Controllers\SANPHAMController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\THANHTOANController.cs" />
     <Compile Include="Areas\DTLinhAdmin\DTLinhAdminAreaRegistration.cs" />
+    <Compile Include="Controllers\DANHMUCController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SANPHAMController.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -174,6 +177,7 @@
     <Compile Include="Models\SANPHAM.cs">
       <DependentUpon>DTlinhModel1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\sysdiagrams.cs" />
     <Compile Include="Models\THANHTOAN.cs">
       <DependentUpon>DTlinhModel1.tt</DependentUpon>
@@ -2204,11 +2208,6 @@
     <Content Include="Areas\DTLinhAdmin\Views\DANHMUC\DtlDetails.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\DANHMUC\DtlEdit.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\DANHMUC\DtlIndex.cshtml" />
-    <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Create.cshtml" />
-    <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Delete.cshtml" />
-    <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Details.cshtml" />
-    <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Edit.cshtml" />
-    <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Index.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\KHACHHANG\Create.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\KHACHHANG\Delete.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\KHACHHANG\Details.cshtml" />
@@ -2230,6 +2229,11 @@
     <Content Include="Areas\DTLinhAdmin\Views\THANHTOAN\Edit.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\THANHTOAN\Index.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\Login\Index.cshtml" />
+    <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Create.cshtml" />
+    <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Delete.cshtml" />
+    <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Details.cshtml" />
+    <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Edit.cshtml" />
+    <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2255,6 +2259,18 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\SANPHAM\Create.cshtml" />
+    <Content Include="Views\SANPHAM\Delete.cshtml" />
+    <Content Include="Views\SANPHAM\Details.cshtml" />
+    <Content Include="Views\SANPHAM\Edit.cshtml" />
+    <Content Include="Views\SANPHAM\Index.cshtml" />
+    <Content Include="Views\DANHMUC\Create.cshtml" />
+    <Content Include="Views\DANHMUC\Delete.cshtml" />
+    <Content Include="Views\DANHMUC\Details.cshtml" />
+    <Content Include="Views\DANHMUC\Edit.cshtml" />
+    <Content Include="Views\DANHMUC\Index.cshtml" />
+    <Content Include="Views\ShoppingCart\Index.cshtml" />
+    <Content Include="Views\ShoppingCart\checkout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

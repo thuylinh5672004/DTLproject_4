@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Daothithuylinh_k22CNTT_2210900036Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Daothithuylinh_k22CNTT_2210900036Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CHITIETDONHANG">
           <Key>
             <PropertyRef Name="MaChiTietDH" />
@@ -54,6 +54,7 @@
           <Property Name="MaDM" Type="nchar" MaxLength="10" />
           <Property Name="GiaBan" Type="decimal" Precision="10" Scale="2" />
           <Property Name="SoLuongTonKho" Type="int" />
+          <Property Name="Anh" Type="text" />
         </EntityType>
         <EntityType Name="THANHTOAN">
           <Key>
@@ -153,8 +154,7 @@
             <End Role="THANHTOAN" EntitySet="THANHTOAN" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Daothithuylinh_k22CNTT_2210900036Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -216,6 +216,7 @@
           <Property Name="SoLuongTonKho" Type="Int32" />
           <NavigationProperty Name="CHITIETDONHANG" Relationship="Self.FK_CHITIETDONHANG_SANPHAM" FromRole="SANPHAM" ToRole="CHITIETDONHANG" />
           <NavigationProperty Name="DANHMUC" Relationship="Self.FK_SANPHAM_DANHMUC" FromRole="SANPHAM" ToRole="DANHMUC" />
+          <Property Name="Anh" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="THANHTOAN">
           <Key>
@@ -369,6 +370,7 @@
           <EntitySetMapping Name="SANPHAM">
             <EntityTypeMapping TypeName="Daothithuylinh_k22CNTT_2210900036Model.SANPHAM">
               <MappingFragment StoreEntitySet="SANPHAM">
+                <ScalarProperty Name="Anh" ColumnName="Anh" />
                 <ScalarProperty Name="MaSP" ColumnName="MaSP" />
                 <ScalarProperty Name="TenSP" ColumnName="TenSP" />
                 <ScalarProperty Name="MaDM" ColumnName="MaDM" />

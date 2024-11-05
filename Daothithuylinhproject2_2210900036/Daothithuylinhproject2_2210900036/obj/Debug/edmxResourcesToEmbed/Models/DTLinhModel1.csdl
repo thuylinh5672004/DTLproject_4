@@ -58,6 +58,7 @@
     <Property Name="SoLuongTonKho" Type="Int32" />
     <NavigationProperty Name="CHITIETDONHANG" Relationship="Self.FK_CHITIETDONHANG_SANPHAM" FromRole="SANPHAM" ToRole="CHITIETDONHANG" />
     <NavigationProperty Name="DANHMUC" Relationship="Self.FK_SANPHAM_DANHMUC" FromRole="SANPHAM" ToRole="DANHMUC" />
+    <Property Name="Anh" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="THANHTOAN">
     <Key>

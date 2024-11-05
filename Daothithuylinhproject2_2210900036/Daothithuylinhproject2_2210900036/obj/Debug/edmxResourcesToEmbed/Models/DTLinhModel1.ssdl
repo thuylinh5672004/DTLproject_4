@@ -49,6 +49,7 @@
     <Property Name="MaDM" Type="nchar" MaxLength="10" />
     <Property Name="GiaBan" Type="decimal" Precision="10" Scale="2" />
     <Property Name="SoLuongTonKho" Type="int" />
+    <Property Name="Anh" Type="text" />
   </EntityType>
   <EntityType Name="THANHTOAN">
     <Key>

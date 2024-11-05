@@ -31,7 +31,5 @@ namespace Daothithuylinhproject2_2210900036.Models
         public virtual DbSet<KHACHHANG> KHACHHANG { get; set; }
         public virtual DbSet<SANPHAM> SANPHAM { get; set; }
         public virtual DbSet<THANHTOAN> THANHTOAN { get; set; }
-
-        public System.Data.Entity.DbSet<Daothithuylinhproject2_2210900036.Models.DtlTaiKhoan> DtlTaiKhoans { get; set; }
     }
 }
