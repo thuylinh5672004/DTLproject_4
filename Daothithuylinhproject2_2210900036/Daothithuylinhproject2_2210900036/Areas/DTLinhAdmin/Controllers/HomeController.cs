@@ -9,7 +9,7 @@ namespace Daothithuylinhproject2_2210900036.Areas.DTLinhAdmin.Controllers
 {
     public class HomeController : Controller
     {
-        LoginModel db = new LoginModel();
+      
         // GET: DTLinhAdmin/Home
         public ActionResult Index()
         {

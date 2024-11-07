@@ -1,0 +1,8 @@
+﻿
+
+@{
+    if (Session["MaKH"] != null)
+    {
+        <a href="@Url.Action("Logout", "Account")">Đăng xuất</a>
+    }
+}

@@ -15,12 +15,22 @@ namespace Daothithuylinhproject2_2210900036.Areas.DTLinhAdmin.Controllers
         private Daothithuylinh_k22CNTT_2210900036Entities2 db = new Daothithuylinh_k22CNTT_2210900036Entities2();
 
         // GET: DTLinhAdmin/SANPHAM
+       
         public ActionResult Index()
         {
-            var sANPHAM = db.SANPHAM.Include(s => s.DANHMUC);
-            return View(sANPHAM.ToList());
-        }
+            var products = new List<SANPHAM> 
+            {
+                new SANPHAM { MaSP = "L01", TenSP = "Áo thun", MaDM = "H01", GiaBan = 100, SoLuongTonKho = 50, Anh = Url.Content("~/Areas/image/Anh1.jpg") },
+                new SANPHAM { MaSP = "L02", TenSP = "Quần jean", MaDM = "H02", GiaBan = 90, SoLuongTonKho = 60, Anh = Url.Content("~/Areas/image/Anh2.jpg")},
+                new SANPHAM { MaSP = "L03", TenSP = "Áo SơMi", MaDM = "H03", GiaBan = 110, SoLuongTonKho = 78, Anh = Url.Content("~/Areas/image/Anh3.jpg") }
+            };
 
+            // Loại bỏ các sản phẩm có mã NULL hoặc thiếu thông tin
+            var validProducts = products.Where(p => !string.IsNullOrEmpty(p.MaSP) && p.GiaBan > 0).ToList();
+
+            return View(validProducts);
+
+        }
         // GET: DTLinhAdmin/SANPHAM/Details/5
         public ActionResult Details(string id)
         {

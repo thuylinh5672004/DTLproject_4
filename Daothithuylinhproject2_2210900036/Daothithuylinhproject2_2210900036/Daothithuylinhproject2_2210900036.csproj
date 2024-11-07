@@ -129,19 +129,19 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\DTLinhAdmin\Controllers\AccountController.cs" />
+    <Compile Include="Areas\DTLinhAdmin\Controllers\CartController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\CHITIETDONHANGController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\DANHMUCController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\DONHANGController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\HomeController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\KHACHHANGController.cs" />
-    <Compile Include="Areas\DTLinhAdmin\Controllers\LoginController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\SANPHAMController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\THANHTOANController.cs" />
     <Compile Include="Areas\DTLinhAdmin\DTLinhAdminAreaRegistration.cs" />
-    <Compile Include="Controllers\DANHMUCController.cs" />
+    <Compile Include="Areas\ModelView\AuthService.cs" />
+    <Compile Include="Areas\ModelView\CartItem.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\SANPHAMController.cs" />
-    <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -169,15 +169,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DTlinhModel1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\DtlTaiKhoan.cs" />
     <Compile Include="Models\KHACHHANG.cs">
       <DependentUpon>DTlinhModel1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\SANPHAM.cs">
       <DependentUpon>DTlinhModel1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\sysdiagrams.cs" />
     <Compile Include="Models\THANHTOAN.cs">
       <DependentUpon>DTlinhModel1.tt</DependentUpon>
@@ -185,6 +182,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\image\Anh1.jpg" />
+    <Content Include="Areas\image\Anh2.jpg" />
+    <Content Include="Areas\image\Anh3.jpg" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -2194,7 +2194,6 @@
     <Content Include="Content\client\plugins\summernote\summernote.js.map" />
     <Content Include="Content\client\plugins\summernote\summernote.min.js.map" />
     <Content Include="Content\client\plugins\toastr\toastr.js.map" />
-    <Content Include="Areas\DTLinhAdmin\Views\Home\Index.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\Shared\_PartialSideBar.cshtml" />
     <EntityDeploy Include="Models\DTlinhModel1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -2228,12 +2227,15 @@
     <Content Include="Areas\DTLinhAdmin\Views\THANHTOAN\Details.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\THANHTOAN\Edit.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\THANHTOAN\Index.cshtml" />
-    <Content Include="Areas\DTLinhAdmin\Views\Login\Index.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Create.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Delete.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Details.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Edit.cshtml" />
     <Content Include="Areas\DTLinhAdmin\Views\SANPHAM\Index.cshtml" />
+    <Content Include="Areas\DTLinhAdmin\Views\Cart\Index.cshtml" />
+    <Content Include="Areas\DTLinhAdmin\Views\Cart\ThongtinThanhtoan.cshtml" />
+    <Content Include="Areas\DTLinhAdmin\Views\Account\Login.cshtml" />
+    <Content Include="Areas\DTLinhAdmin\Views\Account\Logout.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2259,22 +2261,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\SANPHAM\Create.cshtml" />
-    <Content Include="Views\SANPHAM\Delete.cshtml" />
-    <Content Include="Views\SANPHAM\Details.cshtml" />
-    <Content Include="Views\SANPHAM\Edit.cshtml" />
-    <Content Include="Views\SANPHAM\Index.cshtml" />
-    <Content Include="Views\DANHMUC\Create.cshtml" />
-    <Content Include="Views\DANHMUC\Delete.cshtml" />
-    <Content Include="Views\DANHMUC\Details.cshtml" />
-    <Content Include="Views\DANHMUC\Edit.cshtml" />
-    <Content Include="Views\DANHMUC\Index.cshtml" />
-    <Content Include="Views\ShoppingCart\Index.cshtml" />
-    <Content Include="Views\ShoppingCart\checkout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\DTLinhAdmin\Data\" />
+    <Folder Include="Areas\DTLinhAdmin\Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
