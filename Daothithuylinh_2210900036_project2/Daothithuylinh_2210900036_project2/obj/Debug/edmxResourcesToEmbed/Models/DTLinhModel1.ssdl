@@ -47,6 +47,7 @@
     <Property Name="Email" Type="nvarchar" MaxLength="100" />
     <Property Name="Diachi" Type="nvarchar" MaxLength="100" />
     <Property Name="SDT" Type="nchar" MaxLength="10" />
+    <Property Name="UserId" Type="nchar" MaxLength="10" />
   </EntityType>
   <EntityType Name="SANPHAM">
     <Key>
@@ -68,6 +69,15 @@
     <Property Name="PhuongThucTT" Type="nvarchar" MaxLength="50" />
     <Property Name="NgayTT" Type="date" />
     <Property Name="Sotien" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <Association Name="FK_CHITIETDONHANG_DONHANG">
     <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="0..1" />
@@ -105,6 +115,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_KHACHHANG_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="KHACHHANG">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_SANPHAM_DANHMUC">
     <End Role="DANHMUC" Type="Self.DANHMUC" Multiplicity="0..1" />
     <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
@@ -136,6 +158,7 @@
     <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SANPHAM" EntityType="Self.SANPHAM" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="THANHTOAN" EntityType="Self.THANHTOAN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_CHITIETDONHANG_DONHANG" Association="Self.FK_CHITIETDONHANG_DONHANG">
       <End Role="DONHANG" EntitySet="DONHANG" />
       <End Role="CHITIETDONHANG" EntitySet="CHITIETDONHANG" />
@@ -147,6 +170,10 @@
     <AssociationSet Name="FK_DONHANG_KHACHHANG" Association="Self.FK_DONHANG_KHACHHANG">
       <End Role="KHACHHANG" EntitySet="KHACHHANG" />
       <End Role="DONHANG" EntitySet="DONHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KHACHHANG_User" Association="Self.FK_KHACHHANG_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
     </AssociationSet>
     <AssociationSet Name="FK_SANPHAM_DANHMUC" Association="Self.FK_SANPHAM_DANHMUC">
       <End Role="DANHMUC" EntitySet="DANHMUC" />

@@ -63,6 +63,8 @@ namespace Daothithuylinh_2210900036_project2.Controllers
             var cart = GetCart();
             return View(cart);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult ThanhToan(FormCollection form)
         {
             // Lấy thông tin khách hàng từ form

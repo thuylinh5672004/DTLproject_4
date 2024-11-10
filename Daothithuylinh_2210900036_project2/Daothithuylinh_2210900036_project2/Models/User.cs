@@ -12,26 +12,20 @@ namespace Daothithuylinh_2210900036_project2.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class KHACHHANG
+    public partial class User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public KHACHHANG()
+        public User()
         {
-            this.DONHANG = new HashSet<DONHANG>();
+            this.KHACHHANG = new HashSet<KHACHHANG>();
         }
     
-        public string MaKH { get; set; }
-        public string HoTen { get; set; }
-        public Nullable<System.DateTime> NgaySinh { get; set; }
-        public string Gioitinh { get; set; }
-        public string Matkhau { get; set; }
-        public string Email { get; set; }
-        public string Diachi { get; set; }
-        public string SDT { get; set; }
         public string UserId { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DONHANG> DONHANG { get; set; }
-        public virtual User User { get; set; }
+        public virtual ICollection<KHACHHANG> KHACHHANG { get; set; }
     }
 }

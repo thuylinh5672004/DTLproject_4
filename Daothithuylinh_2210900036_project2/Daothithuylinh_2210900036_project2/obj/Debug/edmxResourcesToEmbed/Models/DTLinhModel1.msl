@@ -42,6 +42,7 @@
     <EntitySetMapping Name="KHACHHANG">
       <EntityTypeMapping TypeName="Daothithuylinh_k22CNTT_2210900036Model.KHACHHANG">
         <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="MaKH" ColumnName="MaKH" />
           <ScalarProperty Name="HoTen" ColumnName="HoTen" />
           <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
@@ -73,6 +74,16 @@
           <ScalarProperty Name="PhuongThucTT" ColumnName="PhuongThucTT" />
           <ScalarProperty Name="NgayTT" ColumnName="NgayTT" />
           <ScalarProperty Name="Sotien" ColumnName="Sotien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="Daothithuylinh_k22CNTT_2210900036Model.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -54,6 +54,8 @@
     <Property Name="Diachi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="SDT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <NavigationProperty Name="DONHANG" Relationship="Self.FK_DONHANG_KHACHHANG" FromRole="KHACHHANG" ToRole="DONHANG" />
+    <Property Name="UserId" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="Daothithuylinh_k22CNTT_2210900036Model.FK_KHACHHANG_User" FromRole="KHACHHANG" ToRole="User" />
   </EntityType>
   <EntityType Name="SANPHAM">
     <Key>
@@ -166,5 +168,32 @@
       <End Role="DONHANG" EntitySet="DONHANG" />
       <End Role="THANHTOAN" EntitySet="THANHTOAN" />
     </AssociationSet>
+    <EntitySet Name="User" EntityType="Daothithuylinh_k22CNTT_2210900036Model.User" />
+    <AssociationSet Name="FK_KHACHHANG_User" Association="Daothithuylinh_k22CNTT_2210900036Model.FK_KHACHHANG_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="KHACHHANG" Relationship="Daothithuylinh_k22CNTT_2210900036Model.FK_KHACHHANG_User" FromRole="User" ToRole="KHACHHANG" />
+  </EntityType>
+  <Association Name="FK_KHACHHANG_User">
+    <End Type="Daothithuylinh_k22CNTT_2210900036Model.User" Role="User" Multiplicity="0..1" />
+    <End Type="Daothithuylinh_k22CNTT_2210900036Model.KHACHHANG" Role="KHACHHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="KHACHHANG">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

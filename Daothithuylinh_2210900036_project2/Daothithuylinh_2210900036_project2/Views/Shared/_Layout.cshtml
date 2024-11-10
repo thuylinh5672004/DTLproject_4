@@ -3,12 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Daothithuylinh Project</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @{ var DtlTaiKhoan = Session["DtlTaiKhoan"] as Daothithuylinh_2210900036_project2.Models.DtlTaiKhoan;}
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
             @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
@@ -19,30 +18,34 @@
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
                     <li>@Html.ActionLink("Trang chủ", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    @{ if (DtlTaiKhoan == null)
-                        {
-                            <li>@Html.ActionLink("Đăng nhập ", "Dangnhap", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                            <li>@Html.ActionLink("Đăng ký", "Dangky", "Home", new { area = "" }, new { @class = "nav-link" })</li>
 
+                    @{
+                        // Kiểm tra session người dùng đã đăng nhập chưa
+                        if (Session["Username"] == null)
+                        {
+                            // Nếu chưa đăng nhập, hiển thị các liên kết đăng nhập và đăng ký
+                            <li>@Html.ActionLink("Đăng nhập", "Login", "Account", new { area = "" }, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Đăng ký", "Register", "Account", new { area = "" }, new { @class = "nav-link" })</li>
                         }
                         else
                         {
-                            <li><a style="color:ghostwhite" href="#">xin chào:@DtlTaiKhoan.DtlFullName </a></li>
-                            <li>@Html.ActionLink("SẢN PHẨM", "Index", "SANPHAM", new { area = "" }, new { @class = "nav-link" })</li>
-                            <li>@Html.ActionLink("Đăng xuất", "Dangxuat", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                            // Nếu đã đăng nhập, hiển thị tên người dùng và các liên kết đăng xuất
+                            var username = Session["Username"] as string;
+                            <li><a style="color:ghostwhite" href="#">Xin chào: @username</a></li>
+                            <li>@Html.ActionLink("Đăng xuất", "Logout", "Account", new { area = "" }, new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("Sản phẩm", "Index", "SANPHAM", new { area = "" }, new { @class = "nav-link" })</li>
                         }
                     }
-                    
-
                 </ul>
             </div>
         </div>
     </nav>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Daothithuylinh Project</p>
         </footer>
     </div>
 

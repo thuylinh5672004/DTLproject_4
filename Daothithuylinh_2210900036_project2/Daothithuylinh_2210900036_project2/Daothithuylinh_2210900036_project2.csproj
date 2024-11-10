@@ -132,6 +132,7 @@
     <Compile Include="Areas\DTLinhAdmin\Controllers\DONHANGController.cs" />
     <Compile Include="Areas\DTLinhAdmin\Controllers\DTLDashboardController.cs" />
     <Compile Include="Areas\DTLinhAdmin\DTLinhAdminAreaRegistration.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SANPHAMController.cs" />
@@ -162,20 +163,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DTLinhModel1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\DtlTaiKhoan.cs" />
     <Compile Include="Models\KHACHHANG.cs">
       <DependentUpon>DTLinhModel1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\SANPHAM.cs">
       <DependentUpon>DTLinhModel1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\sysdiagrams.cs" />
     <Compile Include="Models\THANHTOAN.cs">
+      <DependentUpon>DTLinhModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
       <DependentUpon>DTLinhModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="ModelView\CartItem.cs" />
     <Compile Include="ModelView\DH_ChiTiet.cs" />
+    <Compile Include="ModelView\Donhang.cs" />
+    <Compile Include="ModelView\Login.cs" />
+    <Compile Include="ModelView\Register.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -265,8 +269,8 @@
     <Content Include="Views\SANPHAM\Index.cshtml" />
     <Content Include="Views\Cart\Index.cshtml" />
     <Content Include="Views\Cart\ThongtinThanhtoan.cshtml" />
-    <Content Include="Views\Home\Dangky.cshtml" />
-    <Content Include="Views\Home\Dangnhap.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

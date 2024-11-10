@@ -3,42 +3,6 @@
   "WorkspaceRootPath": "D:\\project2\\Daothithuylinh_2210900036_project2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\home\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\home\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\models\\dtltaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\models\\dtltaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\views\\donhang\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\views\\donhang\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\views\\donhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\views\\donhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -47,32 +11,88 @@
       "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\controllers\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\controllers\\dtldashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\controllers\\dtldashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\modelview\\dh_chitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\modelview\\dh_chitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\modelview\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\modelview\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\cart\\thongtinthanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\cart\\thongtinthanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\modelview\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\modelview\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\modelview\\dh_chitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\modelview\\dh_chitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\modelview\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\modelview\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\modelview\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\modelview\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|d:\\project2\\daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\views\\donhang\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\views\\donhang\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\controllers\\dtldashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\controllers\\dtldashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\views\\dtldashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -81,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\modelview\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|solutionrelative:daothithuylinh_2210900036_project2\\modelview\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{574ADDF4-29FD-4FD7-8957-434BE507C45F}|Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2.csproj|D:\\project2\\Daothithuylinh_2210900036_project2\\daothithuylinh_2210900036_project2\\areas\\dtlinhadmin\\dtlinhadminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,193 +118,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Dangky.cshtml",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Home\\Dangky.cshtml",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Home\\Dangky.cshtml",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Home\\Dangky.cshtml",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Home\\Dangky.cshtml",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAIwG4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-10T06:57:28.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Models\\LoginModel.cs",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Models\\LoginModel.cs",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Models\\LoginModel.cs",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Models\\LoginModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Controllers\\CartController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAAGMAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T06:52:17.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAUwDAAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T06:12:02.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Web.config",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Web.config",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Web.config",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Web.config",
-              "ViewState": "AQIAACwAAAAAAAAAAAAIwEEAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-10T05:05:31.494Z",
+              "WhenOpened": "2024-11-09T15:40:43.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Edit.cshtml",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Edit.cshtml",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Edit.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAqwEUAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-10T02:07:30.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "DH_ChiTiet.cs",
               "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\DH_ChiTiet.cs",
               "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\ModelView\\DH_ChiTiet.cs",
               "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\DH_ChiTiet.cs",
               "RelativeToolTip": "Daothithuylinh_2210900036_project2\\ModelView\\DH_ChiTiet.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAYwBgAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAYwBgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T02:00:33.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T16:03:32.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dangnhap.cshtml",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Home\\Dangnhap.cshtml",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Home\\Dangnhap.cshtml",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Home\\Dangnhap.cshtml",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Home\\Dangnhap.cshtml",
-              "ViewState": "AQIAABkAAAAAAAAAAAAIwBkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-10T07:07:15.17Z",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAswFkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T13:46:25.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DtlTaiKhoan.cs",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Models\\DtlTaiKhoan.cs",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Models\\DtlTaiKhoan.cs",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Models\\DtlTaiKhoan.cs",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Models\\DtlTaiKhoan.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAHAAAA",
+              "Title": "SANPHAMController.cs",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\SANPHAMController.cs",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Controllers\\SANPHAMController.cs",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\SANPHAMController.cs",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Controllers\\SANPHAMController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAAwBcAAACJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T08:11:50.82Z",
+              "WhenOpened": "2024-11-09T15:39:58.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Web.config",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Web.config",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Web.config",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Web.config",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-10T07:27:45.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DTLDashboard\\Index.cshtml",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DTLDashboard\\Index.cshtml",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DTLDashboard\\Index.cshtml",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DTLDashboard\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-10T01:41:30.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Index.cshtml",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Index.cshtml",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Index.cshtml",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Index.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADQAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-10T01:33:56.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DTLDashboardController.cs",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Controllers\\DTLDashboardController.cs",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Controllers\\DTLDashboardController.cs",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Controllers\\DTLDashboardController.cs",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Controllers\\DTLDashboardController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "DocumentIndex": 3,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\CartItem.cs",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\ModelView\\CartItem.cs",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\CartItem.cs",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\ModelView\\CartItem.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAYwB8AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T16:11:44.795Z",
+              "WhenOpened": "2024-11-09T15:44:09.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T16:09:58.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "DONHANGController.cs",
               "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Controllers\\DONHANGController.cs",
               "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Controllers\\DONHANGController.cs",
@@ -301,7 +200,236 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Index.cshtml",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Index.cshtml",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Index.cshtml",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Index.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T01:33:56.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-09T15:41:52.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ThongtinThanhtoan.cshtml",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Cart\\ThongtinThanhtoan.cshtml",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Cart\\ThongtinThanhtoan.cshtml",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Cart\\ThongtinThanhtoan.cshtml",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Cart\\ThongtinThanhtoan.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-09T15:51:36.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAYwCMAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-09T16:03:32.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAwBAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T06:12:02.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T12:42:18.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Donhang.cs",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\Donhang.cs",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\ModelView\\Donhang.cs",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\Donhang.cs",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\ModelView\\Donhang.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T14:43:28.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Register.cs",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\Register.cs",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\ModelView\\Register.cs",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\Register.cs",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\ModelView\\Register.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T13:42:03.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\Login.cs",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\ModelView\\Login.cs",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\Login.cs",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\ModelView\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T13:43:09.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T13:51:52.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T13:54:25.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T13:55:46.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Web.config",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Web.config",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Web.config",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Web.config",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwEAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-10T05:05:31.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Edit.cshtml",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Edit.cshtml",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DONHANG\\Edit.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAqwEUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T02:07:30.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Web.config",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Web.config",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Web.config",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Web.config",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-10T07:27:45.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DTLDashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DTLDashboard\\Index.cshtml",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DTLDashboard\\Index.cshtml",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\DTLDashboard\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T01:41:30.983Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "DTLDashboardController.cs",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Controllers\\DTLDashboardController.cs",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Controllers\\DTLDashboardController.cs",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Controllers\\DTLDashboardController.cs",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Controllers\\DTLDashboardController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T16:11:44.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-09T16:09:58.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "DTLinhAdminAreaRegistration.cs",
               "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\DTLinhAdminAreaRegistration.cs",
               "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\DTLinhAdminAreaRegistration.cs",
@@ -309,12 +437,11 @@
               "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Areas\\DTLinhAdmin\\DTLinhAdminAreaRegistration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T16:09:13.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T16:09:13.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\SANPHAM\\Details.cshtml",
               "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\SANPHAM\\Details.cshtml",
@@ -322,12 +449,11 @@
               "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\SANPHAM\\Details.cshtml",
               "ViewState": "AQIAACEAAAAAAAAAAAAAADcAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T15:58:16.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T15:58:16.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\SANPHAM\\Index.cshtml",
               "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\SANPHAM\\Index.cshtml",
@@ -335,73 +461,7 @@
               "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\SANPHAM\\Index.cshtml",
               "ViewState": "AQIAACQAAAAAAAAAAAAAAAsAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T15:52:58.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ThongtinThanhtoan.cshtml",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Cart\\ThongtinThanhtoan.cshtml",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Cart\\ThongtinThanhtoan.cshtml",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Cart\\ThongtinThanhtoan.cshtml",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Cart\\ThongtinThanhtoan.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T15:51:36.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\CartItem.cs",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\ModelView\\CartItem.cs",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\ModelView\\CartItem.cs",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\ModelView\\CartItem.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAxwB8AAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T15:44:09.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Cart\\Index.cshtml",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Views\\Cart\\Index.cshtml",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Views\\Cart\\Index.cshtml",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Views\\Cart\\Index.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T15:41:52.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Controllers\\CartController.cs",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Controllers\\CartController.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAqwJYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T15:40:43.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SANPHAMController.cs",
-              "DocumentMoniker": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\SANPHAMController.cs",
-              "RelativeDocumentMoniker": "Daothithuylinh_2210900036_project2\\Controllers\\SANPHAMController.cs",
-              "ToolTip": "D:\\project2\\Daothithuylinh_2210900036_project2\\Daothithuylinh_2210900036_project2\\Controllers\\SANPHAMController.cs",
-              "RelativeToolTip": "Daothithuylinh_2210900036_project2\\Controllers\\SANPHAMController.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAgwBcAAACJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T15:39:58.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T15:52:58.362Z"
             }
           ]
         }

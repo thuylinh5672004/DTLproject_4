@@ -16,6 +16,8 @@
         <AssociationConnector Association="Daothithuylinh_k22CNTT_2210900036Model.FK_SANPHAM_DANHMUC" ManuallyRouted="false" />
         <AssociationConnector Association="Daothithuylinh_k22CNTT_2210900036Model.FK_DONHANG_KHACHHANG" ManuallyRouted="false" />
         <AssociationConnector Association="Daothithuylinh_k22CNTT_2210900036Model.FK_THANHTOAN_DONHANG" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Daothithuylinh_k22CNTT_2210900036Model.User" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="Daothithuylinh_k22CNTT_2210900036Model.FK_KHACHHANG_User" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

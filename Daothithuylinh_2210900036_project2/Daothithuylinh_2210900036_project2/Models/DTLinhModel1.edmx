@@ -52,6 +52,7 @@
           <Property Name="Email" Type="nvarchar" MaxLength="100" />
           <Property Name="Diachi" Type="nvarchar" MaxLength="100" />
           <Property Name="SDT" Type="nchar" MaxLength="10" />
+          <Property Name="UserId" Type="nchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="SANPHAM">
           <Key>
@@ -73,6 +74,15 @@
           <Property Name="PhuongThucTT" Type="nvarchar" MaxLength="50" />
           <Property Name="NgayTT" Type="date" />
           <Property Name="Sotien" Type="decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <Association Name="FK_CHITIETDONHANG_DONHANG">
           <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="0..1" />
@@ -110,6 +120,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_KHACHHANG_User">
+          <End Role="User" Type="Self.User" Multiplicity="0..1" />
+          <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="KHACHHANG">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_SANPHAM_DANHMUC">
           <End Role="DANHMUC" Type="Self.DANHMUC" Multiplicity="0..1" />
           <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
@@ -141,6 +163,7 @@
           <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SANPHAM" EntityType="Self.SANPHAM" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="THANHTOAN" EntityType="Self.THANHTOAN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_CHITIETDONHANG_DONHANG" Association="Self.FK_CHITIETDONHANG_DONHANG">
             <End Role="DONHANG" EntitySet="DONHANG" />
             <End Role="CHITIETDONHANG" EntitySet="CHITIETDONHANG" />
@@ -152,6 +175,10 @@
           <AssociationSet Name="FK_DONHANG_KHACHHANG" Association="Self.FK_DONHANG_KHACHHANG">
             <End Role="KHACHHANG" EntitySet="KHACHHANG" />
             <End Role="DONHANG" EntitySet="DONHANG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KHACHHANG_User" Association="Self.FK_KHACHHANG_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="KHACHHANG" EntitySet="KHACHHANG" />
           </AssociationSet>
           <AssociationSet Name="FK_SANPHAM_DANHMUC" Association="Self.FK_SANPHAM_DANHMUC">
             <End Role="DANHMUC" EntitySet="DANHMUC" />
@@ -220,6 +247,8 @@
           <Property Name="Diachi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="SDT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <NavigationProperty Name="DONHANG" Relationship="Self.FK_DONHANG_KHACHHANG" FromRole="KHACHHANG" ToRole="DONHANG" />
+          <Property Name="UserId" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="User" Relationship="Daothithuylinh_k22CNTT_2210900036Model.FK_KHACHHANG_User" FromRole="KHACHHANG" ToRole="User" />
         </EntityType>
         <EntityType Name="SANPHAM">
           <Key>
@@ -332,7 +361,34 @@
             <End Role="DONHANG" EntitySet="DONHANG" />
             <End Role="THANHTOAN" EntitySet="THANHTOAN" />
           </AssociationSet>
+          <EntitySet Name="User" EntityType="Daothithuylinh_k22CNTT_2210900036Model.User" />
+          <AssociationSet Name="FK_KHACHHANG_User" Association="Daothithuylinh_k22CNTT_2210900036Model.FK_KHACHHANG_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="KHACHHANG" Relationship="Daothithuylinh_k22CNTT_2210900036Model.FK_KHACHHANG_User" FromRole="User" ToRole="KHACHHANG" />
+        </EntityType>
+        <Association Name="FK_KHACHHANG_User">
+          <End Type="Daothithuylinh_k22CNTT_2210900036Model.User" Role="User" Multiplicity="0..1" />
+          <End Type="Daothithuylinh_k22CNTT_2210900036Model.KHACHHANG" Role="KHACHHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="KHACHHANG">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -380,6 +436,7 @@
           <EntitySetMapping Name="KHACHHANG">
             <EntityTypeMapping TypeName="Daothithuylinh_k22CNTT_2210900036Model.KHACHHANG">
               <MappingFragment StoreEntitySet="KHACHHANG">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="MaKH" ColumnName="MaKH" />
                 <ScalarProperty Name="HoTen" ColumnName="HoTen" />
                 <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
@@ -411,6 +468,16 @@
                 <ScalarProperty Name="PhuongThucTT" ColumnName="PhuongThucTT" />
                 <ScalarProperty Name="NgayTT" ColumnName="NgayTT" />
                 <ScalarProperty Name="Sotien" ColumnName="Sotien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="Daothithuylinh_k22CNTT_2210900036Model.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
