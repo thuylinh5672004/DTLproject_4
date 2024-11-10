@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Daothithuylinh_2210900036_project2.Models.DONHANG>
+
+@{
+    ViewBag.Title = " Thông tin đơn hàng";
+    List<Daothithuylinh_2210900036_project2.ModelView.DH_ChiTiet> chiTiet = ViewBag.donHangChiTiet as List<Daothithuylinh_2210900036_project2.ModelView.DH_ChiTiet>;
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Tongtien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ngaydat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Trangthai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hoten)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Diachi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SDT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KHACHHANG.HoTen)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tongtien)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ngaydat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Trangthai)
+            @if (item.Trangthai == "0")
+            {
+                <span class="text-warning">Chờ xử lý</span> <!-- Màu vàng cho Chờ xử lý -->
+            }
+            else if (item.Trangthai == "1")
+            {
+                <span class="text-primary">Đang xử lý</span> <!-- Màu xanh cho Đang xử lý -->
+            }
+            else if (item.Trangthai == "2")
+            {
+                <span class="text-success">Đã hoàn thành</span> <!-- Màu xanh lá cho Đã hoàn thành -->
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hoten)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Diachi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KHACHHANG.HoTen)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaDH.Trim() }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaDH.Trim() }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaDH.Trim() })
+        </td>
+    </tr>
+}
+
+</table>

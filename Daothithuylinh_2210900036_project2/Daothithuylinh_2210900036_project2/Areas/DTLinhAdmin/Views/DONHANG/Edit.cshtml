@@ -1,0 +1,132 @@
+﻿@model Daothithuylinh_2210900036_project2.Models.DONHANG
+
+@{
+    ViewBag.Title = "Edit";
+    List<Daothithuylinh_2210900036_project2.ModelView.DH_ChiTiet> chiTiet = ViewBag.donHangChiTiet as List<Daothithuylinh_2210900036_project2.ModelView.DH_ChiTiet>;
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+
+    @Html.HiddenFor(model => model.MaDH)
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Mã đơn hàng:</label>
+
+        <div class="col-md-10">
+            <span>@Model.MaDH</span>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Ngày đặt:</label>
+
+        <div class="col-md-10">
+            <span>@Model.Ngaydat.Value.ToString("dd/MM/yyyy")</span>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Người nhận:</label>
+
+        <div class="col-md-10">
+            <span>@Model.Hoten</span>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Địa chỉ nhận:</label>
+
+        <div class="col-md-10">
+            <span>@Model.Diachi</span>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">SDT:</label>
+
+        <div class="col-md-10">
+            <span>@Model.SDT</span>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Trị giá hóa đơn:</label>
+
+        <div class="col-md-10">
+            <span>@Model.Tongtien</span>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Trạng thái hóa đơn:</label>
+
+        <div class="col-md-10">
+            <select class="form-control" name="Trangthai">
+                <option value="0" @(int.TryParse(Model.Trangthai, out int trangthai) && trangthai == 0 ? "selected" : "")>Chờ xử lý</option>
+                <option value="1" @(int.TryParse(Model.Trangthai, out trangthai) && trangthai == 1 ? "selected" : "")>Đang xử lý</option>
+                <option value="2" @(int.TryParse(Model.Trangthai, out trangthai) && trangthai == 2 ? "selected" : "")>Đã hoàn thành</option>
+            </select>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Cập nhập đơn hàng" class="btn btn-success" />
+        </div>
+    </div>
+</div>
+}
+
+<h2>Chi tiết đơn hàng</h2>
+@if (chiTiet != null && chiTiet.Count > 0)
+{ 
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+               
+                <th>Mã SP</th>
+                <th>Tên SP</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in chiTiet)
+            {
+                <tr>
+                    
+                    <td>@item.MaSP</td>
+                    <td>@item.TenSP</td>
+                    <td>@item.GiaBan</td>
+                    <td>@item.SoLuong</td>
+                    <td>@item.ThanhTien</td>
+                    <td>
+                        <a href="@Url.Action("RemoveFromCart", "Cart", new { maSP = item.MaSP })" class="btn btn-danger">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Không có chi tiết đơn hàng để hiển thị.</p>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
