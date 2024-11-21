@@ -19,9 +19,12 @@ namespace Daothithuylinh_2210900036_project2.Controllers
         {
             var products = new List<SANPHAM>
             {
-                new SANPHAM { MaSP = "L01", TenSP = "Áo thun", MaDM = "H01", GiaBan = 100, SoLuongTonKho = 50, Anh = Url.Content("~/Image/Anh1.jpg") },
-                new SANPHAM { MaSP = "L02", TenSP = "Quần jean", MaDM = "H02", GiaBan = 90, SoLuongTonKho = 60, Anh = Url.Content("~/Image/Anh2.jpg")},
-                new SANPHAM { MaSP = "L03", TenSP = "Áo SơMi", MaDM = "H03", GiaBan = 110, SoLuongTonKho = 78, Anh = Url.Content("~/Image/Anh3.jpg") }
+                new SANPHAM {  Anh = Url.Content("~/Image/Anh1.jpg"),MaSP = "L01", TenSP = "Áo thun", MaDM = "H01", GiaBan = 100, SoLuongTonKho = 50 },
+                new SANPHAM {  Anh = Url.Content("~/Image/Anh2.jpg"),MaSP = "L02", TenSP = "Quần jean", MaDM = "H02", GiaBan = 90, SoLuongTonKho = 60},
+                new SANPHAM {  Anh = Url.Content("~/Image/Anh3.jpg"), MaSP = "L03", TenSP = "Áo SơMi", MaDM = "H03", GiaBan = 110, SoLuongTonKho = 78},
+                new SANPHAM {  Anh = Url.Content("~/Image/Anh7.jpg"),MaSP = "L04", TenSP = "Áo Phông", MaDM = "H04", GiaBan = 125, SoLuongTonKho = 88 },
+                new SANPHAM {  Anh = Url.Content("~/Image/Anh7.jpg"), MaSP = "L05", TenSP = "Túi", MaDM = "H05", GiaBan = 200, SoLuongTonKho = 55 },
+                new SANPHAM {  Anh = Url.Content("~/Image/Anh6.jpg"), MaSP = "L06", TenSP = "Áo sơ mi xếp ly", MaDM = "H06", GiaBan = 200, SoLuongTonKho = 55}
             };
 
             // Loại bỏ các sản phẩm có mã NULL hoặc thiếu thông tin

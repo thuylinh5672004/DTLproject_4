@@ -34,6 +34,7 @@
     <Property Name="Hoten" Type="nvarchar" MaxLength="50" />
     <Property Name="Diachi" Type="nvarchar" MaxLength="50" />
     <Property Name="SDT" Type="nchar" MaxLength="10" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="KHACHHANG">
     <Key>
@@ -59,6 +60,7 @@
     <Property Name="GiaBan" Type="decimal" Precision="10" Scale="2" />
     <Property Name="SoLuongTonKho" Type="int" />
     <Property Name="Anh" Type="text" />
+    <Property Name="Mota" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="THANHTOAN">
     <Key>

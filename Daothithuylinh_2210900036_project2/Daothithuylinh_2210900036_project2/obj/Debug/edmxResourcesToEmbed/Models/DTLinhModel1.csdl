@@ -40,6 +40,7 @@
     <NavigationProperty Name="CHITIETDONHANG" Relationship="Self.FK_CHITIETDONHANG_DONHANG" FromRole="DONHANG" ToRole="CHITIETDONHANG" />
     <NavigationProperty Name="KHACHHANG" Relationship="Self.FK_DONHANG_KHACHHANG" FromRole="DONHANG" ToRole="KHACHHANG" />
     <NavigationProperty Name="THANHTOAN" Relationship="Self.FK_THANHTOAN_DONHANG" FromRole="DONHANG" ToRole="THANHTOAN" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="KHACHHANG">
     <Key>
@@ -69,6 +70,7 @@
     <Property Name="Anh" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="CHITIETDONHANG" Relationship="Self.FK_CHITIETDONHANG_SANPHAM" FromRole="SANPHAM" ToRole="CHITIETDONHANG" />
     <NavigationProperty Name="DANHMUC" Relationship="Self.FK_SANPHAM_DANHMUC" FromRole="SANPHAM" ToRole="DANHMUC" />
+    <Property Name="Mota" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="THANHTOAN">
     <Key>

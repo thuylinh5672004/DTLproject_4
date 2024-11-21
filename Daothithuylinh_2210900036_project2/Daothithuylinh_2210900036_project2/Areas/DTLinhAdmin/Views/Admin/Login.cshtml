@@ -1,0 +1,92 @@
+﻿@model Daothithuylinh_2210900036_project2.Models.Admin
+
+@{
+    ViewBag.Title = "Đăng nhập Admin";
+}
+
+<h2>Đăng nhập Admin</h2>
+
+@using (Html.BeginForm("Login", "Admin", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Username)
+        @Html.TextBoxFor(model => model.Username, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Password)
+        @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+    </div>
+    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+<style>
+    /* Center the form */
+    form {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f8f9fa; /* Light background for the form */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for form */
+    }
+
+    /* Form elements */
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #343a40; /* Dark gray for labels */
+    }
+
+    input[type="text"], input[type="password"] {
+        height: 45px;
+        padding: 10px;
+        border: 1px solid #ced4da; /* Border similar to Bootstrap's default */
+        border-radius: 6px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+        border-color: #80bdff; /* Blue border on focus */
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.25); /* Blue shadow on focus */
+    }
+
+    /* Submit button */
+    .btn-primary {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 25px; /* Fully rounded button */
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    /* Error message styling */
+    .alert-danger {
+        margin-top: 15px;
+        font-weight: bold;
+        color: #721c24;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    
+</style>

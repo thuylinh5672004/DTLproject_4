@@ -10,9 +10,9 @@ namespace Daothithuylinh_2210900036_project2.Controllers
 {
     public class CartController : Controller
     {
-        // GET: Cart
         private const string CartSessionKey = "CartItems";
         Daothithuylinh_k22CNTT_2210900036Entities db = new Daothithuylinh_k22CNTT_2210900036Entities();
+
         private ShoppingCart GetCart()
         {
             var cart = Session[CartSessionKey] as ShoppingCart;
@@ -23,54 +23,83 @@ namespace Daothithuylinh_2210900036_project2.Controllers
             }
             return cart;
         }
+
         public ActionResult AddToCart(string maSP, string tenSP, string maDM, decimal giaBan, int soLuongTonKho, string anh, int soLuong)
         {
             var cart = GetCart();
             var item = new CartItem(maSP, tenSP, maDM, giaBan, soLuongTonKho, anh, soLuong);
-
             cart.AddItem(item);
-
-
             return RedirectToAction("Index");
         }
+
         public ActionResult UpdateCart(string maSP, int soLuongMoi)
         {
-            // Lấy giỏ hàng từ session
             var cart = GetCart();
-
-            // Cập nhật số lượng cho sản phẩm trong giỏ hàng
             var item = cart.Items.FirstOrDefault(i => i.MaSP == maSP);
             if (item != null)
             {
-                item.SoLuong = soLuongMoi;  // Cập nhật số lượng
+                item.SoLuong = soLuongMoi;
             }
-
-            // Lưu lại giỏ hàng đã cập nhật vào session
             Session[CartSessionKey] = cart;
-
-            // Quay lại trang giỏ hàng
             return RedirectToAction("Index");
         }
-        // GET: /Cart
+
+        public ActionResult DeleteCartItem(string maSP)
+        {
+            var cart = GetCart();  // Lấy giỏ hàng hiện tại từ session
+
+            var item = cart.Items.FirstOrDefault(x => x.MaSP == maSP);  // Tìm sản phẩm trong giỏ hàng theo mã sản phẩm
+
+            if (item != null)
+            {
+                cart.Items.Remove(item);  // Nếu sản phẩm tồn tại, xóa nó khỏi giỏ hàng
+            }
+
+            // Cập nhật lại giỏ hàng trong session
+            Session[CartSessionKey] = cart;
+
+            // Điều hướng lại trang giỏ hàng sau khi xóa sản phẩm
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult RemoveCartItem(string maSP)
+        {
+            var cart = GetCart();
+            var itemToRemove = cart.Items.FirstOrDefault(x => x.MaSP == maSP);
+            if (itemToRemove != null)
+            {
+                cart.Items.Remove(itemToRemove);
+            }
+            Session[CartSessionKey] = cart;
+            return RedirectToAction("Index", "Cart");
+        }
+
         public ActionResult Index()
         {
             var cart = GetCart();
             return View(cart);
         }
-        //thanh toán
+
         public ActionResult ThongtinThanhtoan()
         {
             var cart = GetCart();
+            ViewBag.MaDH = "DH" + DateTime.Now.ToString("yyMMddHHmm");
+            ViewBag.MaKH = "KH001";  // Ví dụ giá trị mã khách hàng
+            ViewBag.Ngaydat = DateTime.Now.ToString("dd/MM/yyyy");
+            ViewBag.Tongtien = cart.Items.Sum(i => i.SoLuong * i.GiaBan);
+
             return View(cart);
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult ThanhToan(FormCollection form)
         {
             // Lấy thông tin khách hàng từ form
-            var customerName = form["CustomerName"];
-            var customerPhone = form["CustomerPhone"];
-            var address = form["Address"];
+            var tenKhachHang = form["HoTen"];
+            var soDienThoai = form["SDT"];
+            var diaChi = form["Diachi"];
+            var email = form["Email"];
 
             // Lấy giỏ hàng hiện tại
             var cart = GetCart();
@@ -90,13 +119,14 @@ namespace Daothithuylinh_2210900036_project2.Controllers
             // Tạo đơn hàng mới với thông tin cần thiết
             DONHANG newOrder = new DONHANG
             {
-                MaDH = orderID,  // Mã đơn hàng 10 ký tự
-                Hoten = customerName,  // Họ tên khách hàng
-                Diachi = address,  // Địa chỉ giao hàng
-                SDT = customerPhone,  // Số điện thoại
-                Ngaydat = DateTime.Now,  // Ngày đặt hàng
-                Trangthai = "Chưa thanh toán",  // Trạng thái đơn hàng
-
+                MaDH = orderID,
+                Hoten = tenKhachHang,
+                Diachi = diaChi,
+                SDT = soDienThoai,
+                Email=email,
+                Ngaydat = DateTime.Now,
+                Tongtien = totalAmount, // Lưu tổng tiền đơn hàng
+                Trangthai = "Chưa thanh toán",
             };
 
             // Lưu đơn hàng vào cơ sở dữ liệu
@@ -107,47 +137,41 @@ namespace Daothithuylinh_2210900036_project2.Controllers
                 db.SaveChanges();
 
                 // Thêm chi tiết đơn hàng
-                var latestOrder = db.DONHANG.OrderByDescending(x => x.Ngaydat).FirstOrDefault();
-
-                if (latestOrder != null)
+                foreach (var item in cart.Items)
                 {
-                    foreach (var item in cart.Items)
+                    CHITIETDONHANG ct = new CHITIETDONHANG
                     {
-                        CHITIETDONHANG ct = new CHITIETDONHANG
-                        {
-                            MaDH = latestOrder.MaDH,  // Mã đơn hàng
-                            MaSP = item.MaSP,  // Mã sản phẩm
-                            SoLuong = item.SoLuong,  // Số lượng
-                            Giaban = item.GiaBan,  // Giá bán
-                            ThanhTien = item.SoLuong * item.GiaBan  // Thành tiền
-                        };
-
-                        db.CHITIETDONHANG.Add(ct);
-                    }
-                    // Lưu chi tiết đơn hàng vào database
-                    db.SaveChanges();
+                        MaDH = newOrder.MaDH,
+                        MaSP = item.MaSP,
+                        SoLuong = item.SoLuong,
+                        Giaban = item.GiaBan,
+                        ThanhTien = item.SoLuong * item.GiaBan
+                    };
+                    db.CHITIETDONHANG.Add(ct);
                 }
+
+                db.SaveChanges();
 
                 // Xóa giỏ hàng sau khi thanh toán thành công
                 Session.Remove(CartSessionKey);
 
-                return RedirectToAction("Index");
+               
             }
-            catch (System.Data.Entity.Validation.DbEntityValidationException ex)
+            catch (Exception ex)
             {
-                foreach (var validationErrors in ex.EntityValidationErrors)
-                {
-                    foreach (var validationError in validationErrors.ValidationErrors)
-                    {
-                        Console.WriteLine($"Property: {validationError.PropertyName} Error: {validationError.ErrorMessage}");
-                    }
-                }
+                // Log exception và hiện thông báo lỗi
+                Console.WriteLine(ex.Message);
+                TempData["ErrorMessage"] = "Đã có lỗi xảy ra khi lưu đơn hàng. Vui lòng thử lại.";
+                return RedirectToAction("CamOn");
+            }
+            // Điều hướng lại trang cảm ơn
+            return RedirectToAction("CamOn");
 
-                // Xử lý khi có lỗi xảy ra
-                TempData["ErrorMessage"] = "Đã có lỗi xảy ra khi lưu đơn hàng. Vui lòng kiểm tra thông tin và thử lại.";
-                return RedirectToAction("/");
-            }  
+        }
 
+        public ActionResult CamOn()
+        {
+            return View();
         }
     }
 }

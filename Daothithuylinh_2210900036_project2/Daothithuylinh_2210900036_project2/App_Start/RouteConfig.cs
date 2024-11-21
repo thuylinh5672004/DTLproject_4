@@ -17,7 +17,7 @@ namespace Daothithuylinh_2210900036_project2
                 name: "Account",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional }
-
+               
             );
         }
     }

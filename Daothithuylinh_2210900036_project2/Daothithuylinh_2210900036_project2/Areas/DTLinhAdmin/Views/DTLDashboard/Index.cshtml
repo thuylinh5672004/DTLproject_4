@@ -1,7 +1,80 @@
-﻿
+﻿@model Daothithuylinh_2210900036_project2.ModelView.DashboardViewModel
+
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Dashboard";
 }
 
-<h2>Index</h2>
+<h2 class="dashboard-title">Quản lý sản phẩm</h2>
 
+<!-- Hiển thị các thông tin từ ViewModel -->
+<div class="dashboard-stats">
+    <p><strong>Tổng số đơn hàng:</strong> @Model.TotalOrders</p>
+    <p><strong>Doanh thu trong ngày:</strong> @String.Format("{0:C}", Model.DailyRevenue)</p>
+    <p><strong>Doanh thu trong tháng:</strong> @String.Format("{0:C}", Model.MonthlyRevenue)</p>
+    <p><strong>Doanh thu trong năm:</strong> @String.Format("{0:C}", Model.YearlyRevenue)</p>
+</div>
+
+<h3 class="top-products-title">Sản phẩm bán chạy nhất</h3>
+<ul class="top-products-list">
+    @foreach (var product in Model.TopSellingProducts)
+    {
+        <li>
+            <strong>Product ID:</strong> @product.ProductId,
+            <strong>Tổng số đã bán:</strong> @product.TotalSold
+        </li>
+    }
+</ul>
+
+<!-- Custom CSS for Dashboard -->
+<style>
+    .dashboard-title {
+        font-size: 2rem;
+        color: #343a40;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .dashboard-stats {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        color: #495057;
+    }
+
+        .dashboard-stats p {
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+    .top-products-title {
+        font-size: 1.5rem;
+        color: #007bff;
+        margin-bottom: 1rem;
+    }
+
+    .top-products-list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+        .top-products-list li {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+            .top-products-list li strong {
+                color: #343a40;
+            }
+
+            .top-products-list li:hover {
+                background-color: #f1f3f5;
+            }
+</style>

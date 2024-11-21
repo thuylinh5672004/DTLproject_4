@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Dashboard Admin";
+}
+
+<h2>Chào mừng, @Session["AdminUsername"]</h2>
+
+<p>Đây là trang quản lý của Admin.</p>
+
+<a href="@Url.Action("Logout", "Admin")" class="btn btn-danger">Đăng xuất</a>

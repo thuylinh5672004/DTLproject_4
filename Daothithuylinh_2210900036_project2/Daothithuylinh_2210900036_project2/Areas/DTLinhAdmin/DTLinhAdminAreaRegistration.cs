@@ -18,6 +18,7 @@ namespace Daothithuylinh_2210900036_project2.Areas.DTLinhAdmin
                 "DTLinhAdmin_default",
                 "DTLinhAdmin/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional }
+             
             );
         }
     }

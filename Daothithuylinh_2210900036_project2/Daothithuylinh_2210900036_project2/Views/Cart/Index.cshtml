@@ -1,58 +1,58 @@
 ﻿@model Daothithuylinh_2210900036_project2.ModelView.ShoppingCart
 
 @{
-    ViewBag.Title = "Giỏ hàng";
+    ViewBag.Title = "Thông tin Giỏ hàng";
 }
 
-<h2>Giỏ hàng của bạn</h2>
-
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Ảnh</th>
-            <th>Mã SP</th>
-            <th>Tên SP</th>
-            <th>Giá</th>
-            <th>Số lượng</th>
-            <th>Thành tiền</th>
-            <th>Thao tác</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (Daothithuylinh_2210900036_project2.ModelView.CartItem item in Model.Items)
-        {
-            <tr>
-                <td>
-                    @if (!string.IsNullOrEmpty(item.Anh))
-                    {
-                        <img src="@item.Anh" alt="@item.TenSP" style="width: 50px; height: 50px;" />
-                    }
-                    else
-                    {
-                        <span>Chưa có ảnh</span>
-                    }
-                </td>
-                <td>@item.MaSP</td>
-                <td>@item.TenSP</td>
-                <td>@item.GiaBan.ToString("C")</td>
-                <td>
-                    <form method="post" action="@Url.Action("UpdateCart", "Cart")">
-                        <input type="hidden" name="maSP" value="@item.MaSP" />
-                        <input type="number" name="soLuongMoi" value="@item.SoLuong" min="1" />
-                        <button type="submit" class="btn btn-primary">Cập nhật</button>
-                    </form>
-                </td>
-                <td>@item.ThanhTien.ToString("C")</td>
-                <td>
-                    <a href="@Url.Action("RemoveFromCart", "Cart", new { maSP = item.MaSP })" class="btn btn-danger">Xóa</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-
-<h3>Tổng tiền: @Model.GetTotalAmount().ToString("C")</h3>
-
-<a href="@Url.Action("ClearCart", "Cart")" class="btn btn-warning">Xóa toàn bộ giỏ hàng</a>
-<a href="@Url.Action("ThongtinThanhtoan", "Cart")">Thanh toán</a>
-
+<div class="row">
+    <div class="col-md-8">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Ảnh</th>
+                    <th>Mã SP</th>
+                    <th>Tên SP</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Daothithuylinh_2210900036_project2.ModelView.CartItem item in Model.Items)
+                {
+                    <tr>
+                        <td>
+                            @if (!string.IsNullOrEmpty(item.Anh))
+                            {
+                                <img src="@item.Anh" alt="@item.TenSP" style="width: 50px; height: 50px;" />
+                            }
+                            else
+                            {
+                                <span>Chưa có ảnh</span>
+                            }
+                        </td>
+                        <td>@item.MaSP</td>
+                        <td>@item.TenSP</td>
+                        <td>@item.GiaBan.ToString("C")</td>
+                        <td>
+                            <form method="post" action="@Url.Action("UpdateCart", "Cart")">
+                                <input type="hidden" name="maSP" value="@item.MaSP" />
+                                <input type="number" name="soLuongMoi" value="@item.SoLuong" min="1" />
+                                <button type="submit" class="btn btn-primary">Cập nhật</button>
+                            </form>
+                        </td>
+                        <td>@item.ThanhTien.ToString("C")</td>
+                        <td>
+                            <!-- Thay đổi action link để gọi đúng controller action -->
+                            <a href="@Url.Action("DeleteCartItem", "Cart", new { maSP = item.MaSP })" class="btn btn-danger">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <h3>Tổng tiền: @Model.GetTotalAmount().ToString("C")</h3>
+        <a href="@Url.Action("ClearCart", "Cart")" class="btn btn-warning">Xóa toàn bộ giỏ hàng</a>
+        <a href="@Url.Action("ThongtinThanhtoan", "Cart")">Thanh toán</a>
+    </div>
+</div>

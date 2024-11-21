@@ -1,38 +1,156 @@
 ﻿@{
     ViewBag.Title = "Thông tin thanh toán";
 }
-
-<h2>Thông tin thanh toán</h2>
-
 @using (Html.BeginForm("ThanhToan", "Cart", FormMethod.Post))
 {
-    @Html.AntiForgeryToken() <!-- CSRF Protection -->
+    @Html.AntiForgeryToken()
+    <form action="" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        <h2>Thông tin người nhận</h2>
+                    </div>
+                    <div class="card-body">
+                        <!-- Họ tên người nhận -->
+                        <div class="form-group row mb-3">
+                            <label for="HoTen" class="col-sm-4 col-form-label">Họ tên người nhận</label>
+                            <div class="col-sm-8">
+                                <input type="text" id="HoTen" class="form-control" name="HoTen" required />
+                            </div>
+                        </div>
 
-    <div class="form-group">
-        <label for="CustomerName">Họ và Tên</label>
-        <input type="text" name="CustomerName" id="CustomerName" class="form-control" required />
-        @Html.ValidationMessage("CustomerName", "", new { @class = "text-danger" })
-    </div>
+                        <!-- Email người nhận -->
+                        <div class="form-group row mb-3">
+                            <label for="Email" class="col-sm-4 col-form-label">Email người nhận</label>
+                            <div class="col-sm-8">
+                                <input type="text" id="Email" class="form-control" name="Email" required />
+                            </div>
+                        </div>
 
-    <div class="form-group">
-        <label for="Address">Địa chỉ giao hàng</label>
-        <input type="text" name="Address" id="Address" class="form-control" required />
-        @Html.ValidationMessage("Address", "", new { @class = "text-danger" })
-    </div>
+                        <!-- SDT người nhận -->
+                        <div class="form-group row mb-3">
+                            <label for="SDT" class="col-sm-4 col-form-label">Số điện thoại</label>
+                            <div class="col-sm-8">
+                                <input type="text" id="SDT" class="form-control" name="SDT" required />
+                            </div>
+                        </div>
 
-    <div class="form-group">
-        <label for="CustomerPhone">Số điện thoại</label>
-        <input type="text" name="CustomerPhone" id="CustomerPhone" class="form-control" required />
-        @Html.ValidationMessage("CustomerPhone", "", new { @class = "text-danger" })
-    </div>
+                        <!-- Địa chỉ người nhận -->
+                        <div class="form-group row mb-3">
+                            <label for="Diachi" class="col-sm-4 col-form-label">Địa chỉ</label>
+                            <div class="col-sm-8">
+                                <textarea rows="2" id="Diachi" name="Diachi" class="form-control" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <button type="submit" class="btn btn-success">Thanh toán</button>
-}
+            <div class="col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        <h2>Thông tin hóa đơn</h2>
+                    </div>
+                    <div class="card-body">
+                        <!-- Mã Hóa Đơn -->
+                        <div class="form-group row mb-3">
+                            <label for="MaDH" class="col-sm-4 col-form-label">Mã Hóa đơn</label>
+                            <div class="col-sm-8">
+                                <input type="text" readonly id="MaDH" class="form-control" name="MaDH" value="@ViewBag.MaDH" />
+                            </div>
+                        </div>
 
-<!-- Hiển thị thông báo lỗi từ TempData -->
-@if (TempData["ErrorMessage"] != null)
-{
-    <div class="alert alert-danger">
-        @TempData["ErrorMessage"]
-    </div>
+                        <!-- Mã Khách Hàng -->
+                        <div class="form-group row mb-3">
+                            <label for="MaKH" class="col-sm-4 col-form-label">Mã khách hàng</label>
+                            <div class="col-sm-8">
+                                <input type="text" readonly id="MaKH" class="form-control" name="MaKH" value="@ViewBag.MaKH" />
+                            </div>
+                        </div>
+
+                        <!-- Ngày Đặt -->
+                        <div class="form-group row mb-3">
+                            <label for="Ngaydat" class="col-sm-4 col-form-label">Ngày đặt</label>
+                            <div class="col-sm-8">
+                                <input type="text" readonly id="Ngaydat" class="form-control" name="Ngaydat" value="@ViewBag.Ngaydat" />
+                            </div>
+                        </div>
+
+                        <!-- Tổng Tiền -->
+                        <div class="form-group row mb-3">
+                            <label for="Tongtien" class="col-sm-4 col-form-label">Tổng tiền</label>
+                            <div class="col-sm-8">
+                                <input type="text" readonly id="Tongtien" class="form-control" name="Tongtien" value="@ViewBag.Tongtien" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="card my-3">
+                <div class="card-header">
+                    <h2>Chi tiết đơn hàng</h2>
+                </div>
+                <div class="card-body">
+                    <!-- Bảng chi tiết sản phẩm -->
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Ảnh</th>
+                                <th>Mã SP</th>
+                                <th>Tên SP</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Items)
+                            {
+                                <tr>
+                                    <td>
+                                        @if (!string.IsNullOrEmpty(item.Anh))
+                                        {
+                                            <img src="@Url.Content(item.Anh)" alt="@item.TenSP" style="width: 100px; height: 100px;" />
+                                        }
+                                        else
+                                        {
+                                            <span>Chưa có ảnh</span>
+                                        }
+                                    </td>
+                                    <td>@item.MaSP</td>
+                                    <td>@item.TenSP</td>
+                                    <td>@item.GiaBan.ToString("C")</td>
+                                    <td>@item.SoLuong</td>
+                                    <td>@(item.GiaBan * item.SoLuong)</td>
+                                    <td>
+                                        @Html.ActionLink("Xóa", "RemoveCartItem", "Cart", new { id = item.MaSP }, null)
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Nút submit -->
+        <div class="row mt-3">
+            <div class="col-md-12 text-center">
+                @{
+                    decimal totalAmount = 0;
+                    // Tính tổng trị giá từ giỏ hàng
+                    foreach (var item in Model.Items)
+                    {
+                        totalAmount += item.GiaBan * item.SoLuong;
+                    }
+                }
+                <h4>Tổng trị giá: @totalAmount.ToString("C")</h4>
+                <button type="submit" class="btn btn-primary">Thanh toán</button>
+            </div>
+        </div>
+    </form>
 }

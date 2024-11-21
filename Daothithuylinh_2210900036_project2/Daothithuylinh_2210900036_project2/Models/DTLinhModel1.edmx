@@ -39,6 +39,7 @@
           <Property Name="Hoten" Type="nvarchar" MaxLength="50" />
           <Property Name="Diachi" Type="nvarchar" MaxLength="50" />
           <Property Name="SDT" Type="nchar" MaxLength="10" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="KHACHHANG">
           <Key>
@@ -64,6 +65,7 @@
           <Property Name="GiaBan" Type="decimal" Precision="10" Scale="2" />
           <Property Name="SoLuongTonKho" Type="int" />
           <Property Name="Anh" Type="text" />
+          <Property Name="Mota" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="THANHTOAN">
           <Key>
@@ -233,6 +235,7 @@
           <NavigationProperty Name="CHITIETDONHANG" Relationship="Self.FK_CHITIETDONHANG_DONHANG" FromRole="DONHANG" ToRole="CHITIETDONHANG" />
           <NavigationProperty Name="KHACHHANG" Relationship="Self.FK_DONHANG_KHACHHANG" FromRole="DONHANG" ToRole="KHACHHANG" />
           <NavigationProperty Name="THANHTOAN" Relationship="Self.FK_THANHTOAN_DONHANG" FromRole="DONHANG" ToRole="THANHTOAN" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="KHACHHANG">
           <Key>
@@ -262,6 +265,7 @@
           <Property Name="Anh" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="CHITIETDONHANG" Relationship="Self.FK_CHITIETDONHANG_SANPHAM" FromRole="SANPHAM" ToRole="CHITIETDONHANG" />
           <NavigationProperty Name="DANHMUC" Relationship="Self.FK_SANPHAM_DANHMUC" FromRole="SANPHAM" ToRole="DANHMUC" />
+          <Property Name="Mota" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="THANHTOAN">
           <Key>
@@ -422,6 +426,7 @@
           <EntitySetMapping Name="DONHANG">
             <EntityTypeMapping TypeName="Daothithuylinh_k22CNTT_2210900036Model.DONHANG">
               <MappingFragment StoreEntitySet="DONHANG">
+                <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="MaDH" ColumnName="MaDH" />
                 <ScalarProperty Name="MaKH" ColumnName="MaKH" />
                 <ScalarProperty Name="Tongtien" ColumnName="Tongtien" />
@@ -451,6 +456,7 @@
           <EntitySetMapping Name="SANPHAM">
             <EntityTypeMapping TypeName="Daothithuylinh_k22CNTT_2210900036Model.SANPHAM">
               <MappingFragment StoreEntitySet="SANPHAM">
+                <ScalarProperty Name="Mota" ColumnName="Mota" />
                 <ScalarProperty Name="MaSP" ColumnName="MaSP" />
                 <ScalarProperty Name="TenSP" ColumnName="TenSP" />
                 <ScalarProperty Name="MaDM" ColumnName="MaDM" />

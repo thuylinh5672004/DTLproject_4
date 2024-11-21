@@ -6,57 +6,84 @@
 
 <h2>SẢN PHẨM</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table table-bordered table-striped">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.TenSP)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.GiaBan)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SoLuongTonKho)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Anh)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DANHMUC.TenDM)
-        </th>
-        <th></th>
-    </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TenSP)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GiaBan)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SoLuongTonKho)
-            </td>
-            <td>
-                @if (!string.IsNullOrEmpty(item.Anh))
-                {
-                    <img src="@Url.Content(item.Anh)" alt="@item.TenSP" style="width: 100px; height: 100px;" />
-                }
-                else
-                {
-                    <span>Chưa có ảnh</span>
-                }
-                @Html.DisplayFor(modelItem => item.DANHMUC.TenDM)
-            </td>
-            <td>
 
-                @Html.ActionLink("Mua", "AddToCart", "Cart", new { maSP = item.MaSP, tenSP = item.TenSP, maDM = item.MaDM, giaBan = item.GiaBan, soLuongTonKho = item.SoLuongTonKho, anh = item.Anh, soLuong = 1 }, null)
-            </td>
-        </tr>
+   
+    <div class="product-container">
+        @foreach (var item in Model)
+        {
+            <div class="product-card">
+                <div class="product-image">
+                    @if (!string.IsNullOrEmpty(item.Anh))
+                    {
+                        <img src="@Url.Content(item.Anh)" alt="@item.TenSP" style="width: 100px; height: 100px;" />
+                    }
+                    else
+                    {
+                        <span>Chưa có ảnh</span>
+                    }
+                </div>
+                <div class="product-info">
+                    <h3>@Html.DisplayFor(modelItem => item.TenSP)</h3>
+                    <p>Giá: @Html.DisplayFor(modelItem => item.GiaBan) VND</p>
+                    <p>Tồn kho: @Html.DisplayFor(modelItem => item.SoLuongTonKho)</p>
+                   
+                </div>
+
+                <div class="product-action">
+                    @Html.ActionLink("Mua", "AddToCart", "Cart", new { maSP = item.MaSP, tenSP = item.TenSP, maDM = item.MaDM, giaBan = item.GiaBan, soLuongTonKho = item.SoLuongTonKho, anh = item.Anh, soLuong = 1 }, new { @class = "btn btn-primary" })
+                </div>
+            </div>
+        }
+    </div>
+<style>
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
     }
 
-</table>
+    /* Styling individual product card */
+    .product-card {
+        border: 1px solid #ccc;
+        padding: 16px;
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    /* Styling product information */
+    .product-info h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .product-info p {
+        margin: 5px 0;
+        color: #666;
+    }
+
+    /* Styling product image */
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Styling the "Mua" button */
+    .product-action .btn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+        .product-action .btn:hover {
+            background-color: #45a049;
+        }
+</style>

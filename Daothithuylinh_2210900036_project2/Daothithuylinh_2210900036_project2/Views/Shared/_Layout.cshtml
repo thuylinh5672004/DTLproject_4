@@ -6,11 +6,76 @@
     <title>@ViewBag.Title - Daothithuylinh Project</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        /* Định nghĩa biến CSS */
+        :root {
+            --primary-color: #87CEFA; /* Màu xanh da trời nhạt cho navbar */
+            --secondary-color: #4682B4; /* Màu xanh dương đậm hơn cho gradient */
+            --hover-color: #1E90FF; /* Màu xanh đậm hơn cho hover */
+            --bg-color: #E6F7FF; /* Màu nền xanh da trời nhạt cho toàn bộ trang */
+            --text-color: #343a40; /* Màu chữ */
+        }
+
+        body {
+            font-size: 1rem; /* Cỡ chữ nhỏ */
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            padding: 1rem;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .navbar-brand img:hover {
+            transform: scale(1.1);
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            margin-right: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .nav-link:hover {
+            color: var(--hover-color) !important;
+        }
+
+        .btn-light {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-light:hover {
+            background-color: #ffffff;
+            color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            font-size: 1rem;
+            padding: 15px 0;
+        }
+
+        footer p {
+            margin: 0;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark">
         <div class="container">
-            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Dao thi thuy linh", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -19,24 +84,24 @@
                 <ul class="navbar-nav flex-grow-1">
                     <li>@Html.ActionLink("Trang chủ", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
 
-                    @{
-                        // Kiểm tra session người dùng đã đăng nhập chưa
-                        if (Session["Username"] == null)
-                        {
-                            // Nếu chưa đăng nhập, hiển thị các liên kết đăng nhập và đăng ký
-                            <li>@Html.ActionLink("Đăng nhập", "Login", "Account", new { area = "" }, new { @class = "nav-link" })</li>
-                            <li>@Html.ActionLink("Đăng ký", "Register", "Account", new { area = "" }, new { @class = "nav-link" })</li>
-                        }
-                        else
-                        {
-                            // Nếu đã đăng nhập, hiển thị tên người dùng và các liên kết đăng xuất
-                            var username = Session["Username"] as string;
-                            <li><a style="color:ghostwhite" href="#">Xin chào: @username</a></li>
-                            <li>@Html.ActionLink("Đăng xuất", "Logout", "Account", new { area = "" }, new { @class = "nav-link" })</li>
-                            <li>@Html.ActionLink("Sản phẩm", "Index", "SANPHAM", new { area = "" }, new { @class = "nav-link" })</li>
-                        }
+                    @if (Session["Username"] == null)
+                    {
+                        <a href="/Account/Register" class="btn btn-light text-primary me-2">Đăng Ký</a>
+                        <a href="/Account/Login" class="btn btn-light text-primary">Đăng Nhập</a>
+                    }
+                    else
+                    {
+                        var username = Session["Username"] as string;
+                        <li><a style="color:ghostwhite" href="#">@username</a></li>
+                        <li>@Html.ActionLink("Đăng xuất", "Logout", "Account", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Sản phẩm", "Index", "SANPHAM", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Giỏ hàng của bạn", "Index", "Cart", new { area = "" }, new { @class = "nav-link" })</li>
                     }
                 </ul>
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control me-2 border-light" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                    <button class="btn btn-light fw-bold" type="submit">Tìm Kiếm</button>
+                </form>
             </div>
         </div>
     </nav>
