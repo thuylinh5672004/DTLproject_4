@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cập nhật sách</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f8ff;
+        }
+        .card {
+            margin-top: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+        }
+        .btn-custom:hover {
+            background-color: #218838;
+        }
+        .form-control {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Cập nhật thông tin sách</h2>
+            </div>
+            <div class="card-body">
+                <form action="UpdateBookServlet" method="post">
+                    <input type="hidden" name="id" value="{{id}}">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Tiêu đề:</label>
+                        <input type="text" id="title" name="title" value="{{title}}" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="author" class="form-label">Tác giả:</label>
+                        <input type="text" id="author" name="author" value="{{author}}" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="published_year" class="form-label">Năm xuất bản:</label>
+                        <input type="number" id="published_year" name="published_year" value="{{published_year}}" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-custom w-100">Cập nhật</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
