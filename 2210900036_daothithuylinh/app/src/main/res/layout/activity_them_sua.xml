@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:orientation="vertical"
+    tools:context=".ThemSuaActivity">
+
+    <!-- Mã sản phẩm -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã sản phẩm" />
+
+    <EditText
+        android:id="@+id/edtMaSP"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Nhập mã sản phẩm"
+        android:padding="8dp" />
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm" />
+
+    <EditText
+        android:id="@+id/edtTenSP"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Nhập tên sản phẩm"
+        android:padding="8dp" />
+
+    <!-- Số lượng -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số lượng" />
+
+    <EditText
+        android:id="@+id/edtSoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Nhập số lượng"
+        android:padding="8dp"
+        android:inputType="number" />
+
+    <!-- Đơn giá -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đơn giá (VNĐ)" />
+
+    <EditText
+        android:id="@+id/edtDonGia"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Nhập đơn giá"
+        android:padding="8dp"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Thêm sản phẩm -->
+        <Button
+            android:id="@+id/btnThemSua"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Thêm" />
+
+        <!-- Thoát -->
+        <Button
+            android:id="@+id/btnThoat"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Thoát" />
+    </LinearLayout>
+</LinearLayout>
