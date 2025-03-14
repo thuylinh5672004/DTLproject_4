@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Khách Hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            align-self: flex-start;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Thêm Khách Hàng</h2>
+        <form action="DtlKhachHangServlet" method="post">
+            <input type="hidden" name="action" value="add">
+
+            <label>Mã KH:</label>
+            <input type="text" name="DtlMaKH" required>
+
+            <label>Họ Tên:</label>
+            <input type="text" name="DtlHoTen" required>
+
+            <label>Email:</label>
+            <input type="email" name="DtlEmail" required>
+
+            <label>Số Điện Thoại:</label>
+            <input type="text" name="DtlSoDienThoai" required>
+
+            <label>Địa Chỉ:</label>
+            <input type="text" name="DtlDiaChi" required>
+
+            <button type="submit">Thêm Khách Hàng</button>
+        </form>
+    </div>
+</body>
+</html>

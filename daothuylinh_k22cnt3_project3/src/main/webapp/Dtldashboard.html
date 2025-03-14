@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script>
+        function checkSession() {
+            fetch("SessionCheckServlet")
+            .then(response => response.json())
+            .then(data => {
+                if (!data.loggedIn) {
+                    window.location.href = "Dtllogin.html";
+                } else {
+                    document.getElementById("admin-name").innerText = data.username;
+                }
+            })
+            .catch(error => console.error("Lỗi:", error));
+        }
+
+        function logout() {
+            fetch("AdminServlet", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: "action=logout"
+            })
+            .then(() => {
+                window.location.href = "Dtllogin.html";
+            })
+            .catch(error => console.error("Lỗi:", error));
+        }
+
+        window.onload = checkSession;
+    </script>
+</head>
+<body>
+    <h2>Chào mừng, <span id="admin-name"></span>!</h2>
+    <button onclick="logout()">Đăng xuất</button>
+</body>
+</html>

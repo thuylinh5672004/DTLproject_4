@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin-top: 50px;
+        }
+        h2 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Chỉnh sửa sản phẩm</h2>
+
+        <form action="DtlEditProductServlet" method="post">
+            <div class="mb-3">
+                <label class="form-label">Mã sản phẩm:</label>
+                <input type="text" id="DtlMaSP" name="DtlMaSP" class="form-control" readonly>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Tên sản phẩm:</label>
+                <input type="text" id="DtlTenSP" name="DtlTenSP" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Mô tả:</label>
+                <textarea id="DtlMoTa" name="DtlMoTa" class="form-control" rows="3" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Giá:</label>
+                <input type="number" id="DtlGia" name="DtlGia" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Số lượng:</label>
+                <input type="number" id="DtlSoLuong" name="DtlSoLuong" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Hình ảnh (URL):</label>
+                <input type="text" id="DtlHinhAnh" name="DtlHinhAnh" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+            <a href="DtlProductServlet" class="btn btn-secondary mt-2 w-100">Hủy</a>
+        </form>
+    </div>
+
+    <script>
+        // Lấy thông tin sản phẩm từ URL (do Servlet chuyển hướng)
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("DtlMaSP").value = params.get("DtlMaSP") || "";
+        document.getElementById("DtlTenSP").value = params.get("DtlTenSP") || "";
+        document.getElementById("DtlMoTa").value = params.get("DtlMoTa") || "";
+        document.getElementById("DtlGia").value = params.get("DtlGia") || "";
+        document.getElementById("DtlSoLuong").value = params.get("DtlSoLuong") || "";
+        document.getElementById("DtlHinhAnh").value = params.get("DtlHinhAnh") || "";
+    </script>
+</body>
+</html>
