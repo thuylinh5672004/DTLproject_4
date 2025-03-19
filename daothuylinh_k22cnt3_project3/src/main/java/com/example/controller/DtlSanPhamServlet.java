@@ -75,6 +75,7 @@ public class DtlSanPhamServlet extends HttpServlet {
 	            out.println("<li class='nav-item'><a class='nav-link' href='DtlTrangGioHangServlet'>Giỏ hàng <span class='badge bg-warning'>" + soLuongGio + "</span></a></li>");
 	            out.println("<li class='nav-item'><a class='nav-link' href='DtlSanPhamServlet'>Sản phẩm</a></li>");
 	            out.println("<li class='nav-item'><a class='nav-link' href='DtlLoginSanPham.html'>ĐĂNG XUẤT</a></li>");
+	            out.println("<li class='nav-item'><a class='nav-link' href='DtlLoginSanPham.html'>ĐĂNG NHẬP</a></li>");
 	            out.println("<li class='nav-item'><a class='nav-link' href='Dtlregister.html'>ĐĂNG KÝ</a></li>");
 	            out.println("</ul>");
 	            // Form tìm kiếm
