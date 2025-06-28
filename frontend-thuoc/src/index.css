@@ -1,0 +1,152 @@
+/* Reset cơ bản */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #212529;
+}
+
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --success-color: #28a745;
+}
+
+/* Link mặc định */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-hover);
+}
+
+/* Heading */
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+/* Buttons */
+button,
+.btn,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+.btn:hover,
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+button:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+/* Navbar + Footer */
+.navbar,
+footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Banner */
+.banner {
+  background: url('https://medipharusa.com/wp-content/uploads/2020/03/mau-quay-thuoc-dat-chuan-GPP-6-1.jpg') no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+.banner p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Product card */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #333;
+}
+.product-price {
+  font-size: 1.1rem;
+  color: var(--success-color);
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.product-description {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+/* Product card hover colors */
+.product-card:hover .product-description {
+  color: #333;
+}
+.product-card:hover .product-title {
+  color: var(--primary-hover);
+}
+.product-card:hover .product-price {
+  color: #155724;
+}
+
+/* Card general */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+}
